@@ -1,0 +1,25 @@
+12-
+
+Uma função é um conjunto de instruções armazenadas na memória, ou seja, podemos acessar uma função utilizando um ponteiro que a aponte para o local da função na memória
+
+Ex:
+
+#include <stdio.h>
+#include <stdlib.h>
+int max(int a, int b){
+   return (a > b) ? a : b;
+}
+
+int main()
+{
+	int x, y, z;
+	int (*p)(int, int);
+	printf("Digite dois números: ");
+	scanf("%d %d", &x, &y);
+	p = max;
+	z = p(x,y);
+	printf("Maior = %d\n",z);
+	system("pause");
+
+	return 0;
+}
