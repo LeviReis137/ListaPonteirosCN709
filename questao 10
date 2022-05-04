@@ -1,0 +1,23 @@
+10-
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int i;
+    char x1[4] = {"1234"};
+    int x2[4] = {1,2,3,4};
+    float x3[4] = {1,2,3,4};
+    double x4[4] = {1,2,3,4};
+ 	 
+ 	 for(i=0;i<4;i++){
+printf("char x + %d = %x \n",i+1 ,(x1+i));
+ 	}
+ 	 for(i=0;i<4;i++){
+printf("int x + %d = %x \n",i+1 ,(x2+i));
+ 	 }
+ 	 for(i=0;i<4;i++){
+printf("float x + %d = %x \n",i+1 ,(x3+i));
+ 	 }
+ 	 for(i=0;i<4;i++){printf("double x + %d = %x \n",i+1 ,(x4+i));
+ 	 }
+	}
